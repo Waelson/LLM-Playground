@@ -5,11 +5,42 @@ O **LLM Playground** é um ambiente interativo para experimentar modelos de ling
 Este projeto utiliza **Python**, **Hugging Face Transformers** e **Gradio** para criar uma interface simples.
 
 ---
-## 🖼️ Interface do LLM Playground
+## Interface do LLM Playground
 
 Abaixo está uma prévia da interface da aplicação em execução localmente:
 
 ![Interface do LLM Playground](assets/ui.png)
+
+---
+---
+
+## 🧠 Modelo Utilizado
+
+O **LLM Playground** foi configurado para usar um modelo open source hospedado no [Hugging Face](https://huggingface.co), podendo ser facilmente trocado por outro compatível com a biblioteca `transformers`.
+
+### 🔹 Modelo padrão
+**Nome:** `mistralai/Mistral-7B-Instruct-v0.2`  
+**Tipo:** Modelo de linguagem autoregressivo (causal)  
+**Tamanho:** 7 bilhões de parâmetros  
+**Arquitetura:** Transformer Decoder (base GPT)  
+**Licença:** Open Source (Apache 2.0)  
+**Treinamento:** Supervised Fine-Tuning em dados de instrução multilíngues  
+**Domínio:** Instruções gerais, raciocínio e conversação  
+
+O **Mistral-7B-Instruct** foi escolhido por equilibrar:
+- 🧩 **Desempenho**: excelente qualidade de resposta com baixo tempo de inferência;  
+- ⚡ **Eficiência**: roda localmente em Apple Silicon (M1–M4) via MPS;  
+- 🧠 **Capacidade**: suporte a raciocínio, explicações e tarefas de texto complexas;  
+- 💬 **Aderência a instruções**: responde bem a prompts no estilo “instruct” (similar ao GPT-3.5).
+
+---
+
+### 🧰 Alternativas compatíveis
+
+Você pode modificar o modelo no arquivo `app.py` trocando a linha:
+
+```python
+MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
 
 
 ## 1. Instalação do Conda no macOS
