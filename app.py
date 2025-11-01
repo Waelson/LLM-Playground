@@ -1,19 +1,19 @@
 import gradio as gr
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-import os
 
-# Configuração para permitir fallback em dispositivos MPS (Macs com chip Apple Silicon)
-# os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
 
 # 1️⃣ Carrega o modelo e o tokenizer
 MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
+
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
     torch_dtype=torch.float16,
     device_map="auto"
 )
+
 
 # 2️⃣ Função de geração de texto
 def generate_response(prompt, temperature, top_k, top_p, max_length):
@@ -45,4 +45,4 @@ interface = gr.Interface(
 
 # 4️⃣ Executa o app
 if __name__ == "__main__":
-    interface.launch(server_name="0.0.0.0", server_port=7860)
+    interface.launch(server_name="0.0.0.0", server_port=7860, share=True)
