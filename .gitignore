@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .gradio/
+flagged/
 .Python
 build/
 develop-eggs/
