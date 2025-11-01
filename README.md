@@ -12,9 +12,8 @@ Abaixo está uma prévia da interface da aplicação em execução localmente:
 ![Interface do LLM Playground](assets/ui.png)
 
 ---
----
 
-## 🧠 Modelo Utilizado
+## Modelo Utilizado
 
 O **LLM Playground** foi configurado para usar um modelo open source hospedado no [Hugging Face](https://huggingface.co), podendo ser facilmente trocado por outro compatível com a biblioteca `transformers`.
 
