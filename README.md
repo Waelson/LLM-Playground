@@ -19,7 +19,7 @@ Abaixo está uma prévia da interface da aplicação em execução localmente:
 
 O **LLM Playground** foi configurado para usar um modelo open source hospedado no [Hugging Face](https://huggingface.co), podendo ser facilmente trocado por outro compatível com a biblioteca `transformers`.
 
-### 🔹 Modelo padrão
+### Modelo padrão
 **Nome:** `mistralai/Mistral-7B-Instruct-v0.2`  
 **Tipo:** Modelo de linguagem autoregressivo (causal)  
 **Tamanho:** 7 bilhões de parâmetros  
@@ -29,10 +29,10 @@ O **LLM Playground** foi configurado para usar um modelo open source hospedado n
 **Domínio:** Instruções gerais, raciocínio e conversação  
 
 O **Mistral-7B-Instruct** foi escolhido por equilibrar:
-- 🧩 **Desempenho**: excelente qualidade de resposta com baixo tempo de inferência;  
-- ⚡ **Eficiência**: roda localmente em Apple Silicon (M1–M4) via MPS;  
-- 🧠 **Capacidade**: suporte a raciocínio, explicações e tarefas de texto complexas;  
-- 💬 **Aderência a instruções**: responde bem a prompts no estilo “instruct” (similar ao GPT-3.5).
+- **Desempenho**: excelente qualidade de resposta com baixo tempo de inferência;  
+- **Eficiência**: roda localmente em Apple Silicon (M1–M4) via MPS;  
+- **Capacidade**: suporte a raciocínio, explicações e tarefas de texto complexas;  
+- **Aderência a instruções**: responde bem a prompts no estilo “instruct” (similar ao GPT-3.5).
 
 ---
 
