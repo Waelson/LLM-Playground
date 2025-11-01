@@ -3,7 +3,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 
-# 1️⃣ Carrega o modelo e o tokenizer
+# 1. Carrega o modelo e o tokenizer
 MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -15,7 +15,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 
-# 2️⃣ Função de geração de texto
+# 2. Função de geração de texto
 def generate_response(prompt, temperature, top_k, top_p, max_length):
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
     outputs = model.generate(
@@ -28,7 +28,7 @@ def generate_response(prompt, temperature, top_k, top_p, max_length):
     )
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-# 3️⃣ Cria a interface Gradio
+# 3. Cria a interface Gradio
 interface = gr.Interface(
     fn=generate_response,
     inputs=[
@@ -43,6 +43,6 @@ interface = gr.Interface(
     description="Experimente diferentes parâmetros de inferência e veja como mudam as respostas do modelo."
 )
 
-# 4️⃣ Executa o app
+# 4. Executa o app
 if __name__ == "__main__":
     interface.launch(server_name="0.0.0.0", server_port=7860, share=True)

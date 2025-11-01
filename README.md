@@ -17,7 +17,7 @@ Abaixo está uma prévia da interface da aplicação em execução localmente:
 
 ## Modelo Utilizado
 
-O **LLM Playground** foi configurado para usar um modelo open source hospedado no [Hugging Face](https://huggingface.co), podendo ser facilmente trocado por outro compatível com a biblioteca `transformers`.
+O **LLM Playground** foi configurado para usar um modelo open source hospedado no [Hugging Face](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2), podendo ser facilmente trocado por outro compatível com a biblioteca `transformers`.
 
 ### Modelo padrão
 **Nome:** `mistralai/Mistral-7B-Instruct-v0.2`  
