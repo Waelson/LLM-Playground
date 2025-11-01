@@ -5,6 +5,12 @@ O **LLM Playground** é um ambiente interativo para experimentar modelos de ling
 Este projeto utiliza **Python**, **Hugging Face Transformers** e **Gradio** para criar uma interface simples.
 
 ---
+## 🖼️ Interface do LLM Playground
+
+Abaixo está uma prévia da interface da aplicação em execução localmente:
+
+![Interface do LLM Playground](assets/ui.png)
+
 
 ## 1. Instalação do Conda no macOS
 
