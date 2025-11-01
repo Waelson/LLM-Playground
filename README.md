@@ -1,5 +1,7 @@
 # LLM Playground
 
+![LLM](https://img.shields.io/badge/technology-LLM-blue.svg)   ![Python](https://img.shields.io/badge/technology-Python-red.svg)  ![HuggingFace](https://img.shields.io/badge/technology-Hugging_Face-green.svg)  ![PyTorch](https://img.shields.io/badge/technology-PyTorch-cian.svg)  
+
 O **LLM Playground** é um ambiente interativo para experimentar modelos de linguagem (LLMs) localmente, ajustando parâmetros como **temperature**, **top-k**, **top-p** e **max length** para entender como eles influenciam o comportamento e a criatividade das respostas.  
 
 Este projeto utiliza **Python**, **Hugging Face Transformers** e **Gradio** para criar uma interface simples.
