@@ -53,7 +53,7 @@ Primeiro, instale o **Miniconda** (versão leve do Conda).
 No terminal, execute:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh)"
+brew install --cask miniconda
 ```
 
 Após a instalação, feche e reabra o terminal e valide:
