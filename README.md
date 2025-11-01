@@ -34,13 +34,16 @@ O **Mistral-7B-Instruct** foi escolhido por equilibrar:
 
 ---
 
-### 🧰 Alternativas compatíveis
+### Alternativas compatíveis
 
 Você pode modificar o modelo no arquivo `app.py` trocando a linha:
 
 ```python
 MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
+```
 
+---
+# Instalação & Execução
 
 ## 1. Instalação do Conda no macOS
 
